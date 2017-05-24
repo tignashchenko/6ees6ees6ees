@@ -1,12 +1,15 @@
-class RetiredForagerBee extends HoneyMakerBee {
-  constructor(color, eat) {
-    super(color, eat);
-    this.age = 10
-    this.job = 'find pollen'
-    this.canFly = true
-    this.treasureChest = []
+class RetiredForagerBee extends ForagerBee {
+  constructor(food, eat, treasureChest) {
+    super(food, eat, treasureChest);
+    this.age = 40
+    this.job = 'gamble'
+    this.canFly = false
+    this.color = 'grey'
   }
-  forage(treasure) {
+  forage() {
+    return 'I am too old, let me play cards instead';
+  }
+  gamble(treasure) {
     this.treasureChest.push(treasure);
   }
 };
