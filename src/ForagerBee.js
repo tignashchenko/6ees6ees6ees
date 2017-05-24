@@ -1,3 +1,3 @@
-class ForagerBee {
-  // TODO..
+class RetiredForagerBee {
+
 };
